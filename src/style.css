@@ -27,12 +27,10 @@ p {
 
 a {
   color: #0077cc;
-  text-decoration: none;
 }
 
 a:hover, a:focus {
   color: #004499;
-  text-decoration: underline;
 }
 
 figure {
