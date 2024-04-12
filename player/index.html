@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overburn - WinAmp song player</title>
+
+    <style>
+      body {
+        background-color: #111;
+        margin: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/webamp"></script>
+    <script>
+      const app = document.getElementById("app");
+      const webamp = new Webamp({
+        initialTracks: [
+          {
+            metaData: {
+              artist: "Overburn",
+              title: "The Passenger - Iggy Pop | (keyboard solo)",
+            },
+            url: "../mp3/passenger_solo.mp3",
+          },
+          {
+            metaData: {
+              artist: "Overburn",
+              title: "Again - Alice in chains | (guitar solo)",
+            },
+            url: "../mp3/again_solo.mp3",
+          },
+          {
+            metaData: {
+              artist: "Overburn",
+              title: "Champagne Supernova - Oasis | (clip)",
+            },
+            url: "../mp3/champagne_clip.mp3",
+          },
+          {
+            metaData: {
+              artist: "Overburn",
+              title: "Creep - Radiohead | (clip)",
+            },
+            url: "../mp3/creep_clip.mp3",
+          },
+          {
+            metaData: {
+              artist: "Overburn",
+              title: "Drum solo/Patchanka (intro)",
+            },
+            url: "../mp3/drum_pat_intro.mp3",
+          },
+          {
+            metaData: {
+              artist: "Overburn",
+              title: "Wonderwall - Oasis | (clip)",
+            },
+            url: "../mp3/wonderwall_clip.mp3",
+          },
+        ],
+      });
+      webamp.renderWhenReady(app);
+    </script>
+  </body>
+</html>

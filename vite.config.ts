@@ -15,6 +15,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
+        player: resolve(__dirname, "player/index.html"),
         og: resolve(__dirname, "2004/index.html"),
         ogBio: resolve(__dirname, "2004/bio.html"),
         ogDisco: resolve(__dirname, "2004/disco.html"),
